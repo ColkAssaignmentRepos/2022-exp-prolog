@@ -1,0 +1,305 @@
+%%%%%%%%%% 中華料理ここから %%%%%%%%%%
+
+%%%%% 北京料理 %%%%%
+beijing_cuisine(peking_duck).
+
+%%%%% 四川料理 %%%%%
+sichuan_cuisine(mapo_doufu).
+sichuan_cuisine(twice_cooked_pork).
+sichuan_cuisine(bang_bang_chiken).
+
+%%%%% 広東料理 %%%%%
+cantonese_cuisine(wonton).
+
+%%%%% 上海料理 %%%%%
+shanghai_cuisine(pepper_steak).
+
+%%%%% 江浙料理 %%%%%
+hejiang_cuisine(soup_dumpling).
+
+%%%%% 台湾料理 %%%%%
+taiwanese_cuisine(minced_pork_rice).
+taiwanese_cuisine(big_fried_chiken).
+
+%%%%% 薬膳 %%%%%
+medicinal_cooking(almond_jelly).
+
+%%%%% 中華料理集合の定義 %%%%%
+chinese_cuisine(X) :- beijing_cuisine(X); sichuan_cuisine(X); cantonese_cuisine(X); shanghai_cuisine(X); hejiang_cuisine(X); taiwanese_cuisine(X); medicinal_cooking(X).
+
+%%%%%%%%%% 中華料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% 日本料理ここから %%%%%%%%%%
+%%%%% 日本料理 %%%%%
+japanese_mainland_cuisine(ramen).
+japanese_mainland_cuisine(sushi).
+japanese_mainland_cuisine(monjayaki).
+japanese_mainland_cuisine(kenchin_jiru).
+
+%%%%% 沖縄料理 %%%%%
+okinawa_cuisine(soki_soba).
+
+%%%%% 日本料理集合の定義 %%%%%
+japanese_cuisine(X) :- japanese_mainland_cuisine(X); okinawa_cuisine(X).
+
+%%%%%%%%%% 日本料理ここから %%%%%%%%%%
+
+
+%%%%%%%%%% タイ料理ここから %%%%%%%%%%
+thai_cuisine(tom_yum_kun).
+thai_cuisine(pad_thai).
+thai_cuisine(pad_kra_pao).
+
+%%%%%%%%%% タイ料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% ベトナム料理ここから %%%%%%%%%%
+vietnamese_cuisine(pho).
+
+%%%%%%%%%% ベトナム料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% インドネシア料理ここから %%%%%%%%%%
+indonesian_cuisine(nasi_goreng).
+
+%%%%%%%%%% ベトナム料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% カンボジア料理ここから %%%%%%%%%%
+cambodian_cuisine(amok).
+
+%%%%%%%%%% カンボジア料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% フランス料理ここから %%%%%%%%%%
+french_cuisine(aspic).
+french_cuisine(parfait).
+french_cuisine(boeuf_bourguignon).
+french_cuisine(mousse).
+french_cuisine(pot_au_feu).
+
+%%%%%%%%%% フランス料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% イタリア料理ここから %%%%%%%%%%
+%%%%% 北イタリア %%%%%
+north_italian_cuisine(focaccia).
+
+%%%%% 南イタリア %%%%%
+south_italian_cuisine(acqua_pazza).
+
+%%%%% その他イタリア %%%%%
+other_italian_cuisine(spaghetti).
+other_italian_cuisine(minestrone).
+
+%%%%% イタリア料理集合の定義 %%%%%
+italian_cuisine(X) :- north_italian_cuisine(X); south_italian_cuisine(X); other_italian_cuisine.
+
+%%%%%%%%%% イタリア料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% イギリス料理ここから %%%%%%%%%%
+england_cuisine(haggis).
+england_cuisine(fish_and_chips).
+england_cuisine(stargazy_pie).
+
+%%%%%%%%%% イギリス料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% スペイン料理ここから %%%%%%%%%%
+spanish_cuisine(paella).
+
+%%%%%%%%%% スペイン料理ここまで %%%%%%%%%%
+
+
+%%%%%%%%%% シンガポール料理ここから %%%%%%%%%%
+singaporean_cuisine(frog_porridge).
+
+%%%%%%%%%% シンガポール料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% メキシコ料理ここから %%%%%%%%%%
+mexican_cuisine(taco).
+
+%%%%%%%%%% メキシコ料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% ウクライナ料理ここから %%%%%%%%%%
+ukrainian_cuisine(borscht).
+
+%%%%%%%%%% ウクライナ料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% ロシア料理ここから %%%%%%%%%%
+russian_cuisine(piroshki).
+
+%%%%%%%%%% ロシア料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% アメリカ料理ここから %%%%%%%%%%
+american_cuisine(hamburger).
+american_cuisine(hot_dog).
+
+%%%%%%%%%% アメリカ料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% インド料理ここから %%%%%%%%%%
+indian_cuisine(briyani).
+indian_cuisine(naan).
+indian_cuisine(curry).
+
+%%%%%%%%%% インド料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% インド料理ここから %%%%%%%%%%
+indian_cuisine(briyani).
+indian_cuisine(naan).
+indian_cuisine(curry).
+
+%%%%%%%%%% インド料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% トルコ料理ここから %%%%%%%%%%
+turkish_cuisine(kebab).
+
+%%%%%%%%%% トルコ料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% 南アフリカ料理ここから %%%%%%%%%%
+south_african_cuisine(potjie).
+
+%%%%%%%%%% 南アフリカ料理ここまで %%%%%%%%%%
+
+
+
+%%%%%%%%%% 料理分類ここから %%%%%%%%%%
+%%%%% デザート %%%%%
+dessert(almond_jelly).
+
+dessert(parfait).
+dessert(mousse).
+
+%%%%% 丼物 %%%%%
+donburi(minced_pork_rice).
+
+%%%%% 炒めもの %%%%%
+stir_fry(mapo_doufu).
+stir_fry(twice_cooked_pork).
+stir_fry(pepper_steak).
+
+stir_fry(pad_kra_pao).
+
+stir_fry(nasi_goreng).
+
+stir_fry(paella).
+
+stir_fry(monjayaki).
+
+%%%%% 麺料理 %%%%%
+noodles(bang_bang_chiken).
+
+noodles(pad_thai).
+
+noodles(pho).
+
+noodles(spaghetti).
+
+noodles(ramen).
+noodles(soki_soba).
+
+%%%%% dumpling %%%%%
+dumpling(soup_dumpling).
+
+%%%%% 揚げ物 %%%%%
+fried_food(big_fried_chiken).
+fried_food(peking_duck).
+
+fried_food(fish_and_chips).
+
+%%%%% スープ %%%%%
+soup(wonton).
+
+soup(tom_yum_kun).
+
+soup(pot_au_feu).
+
+soup(borscht).
+
+soup(minestrone).
+
+%%%%% 蒸し料理 %%%%%
+steamed_food(amok).
+
+steamed_food(briyani).
+
+steamed_food(haggis).
+
+%%%%% 煮込み料理 %%%%%
+stew(frog_porridge).
+
+stew(boeuf_bourguignon).
+
+stew(curry).
+
+stew(acqua_pazza).
+
+stew(kenchin_jiru).
+
+stew(potjie).
+
+%%%%% ゼリー %%%%%
+jelly(aspic).
+
+%%%%% パン %%%%%
+bread(naan).
+
+bread(focaccia).
+
+bread(piroshki).
+
+%%%%% パイ料理 %%%%%
+pie(stargazy_pie).
+
+%%%%% ファストフード %%%%%
+fast_food(taco).
+fast_food(hamburger).
+fast_food(hot_dog).
+
+%%%%% 炙り料理 %%%%%
+roast(kebab).
+
+%%%%% その他 %%%%%
+others(sushi).
+
+%%%%%%%%%% 料理分類ここまで %%%%%%%%%%
+
+%%%%% アジア料理集合の定義 %%%%%
+asian_cuisine(X) :- chinese_cuisine(X); thai_cuisine(X); vietnamese_cuisine(X); indonesian_cuisine(X); cambodian_cuisine(X); singaporean_cuisine(X); indian_cuisine(X).
+
+%%%%% ヨーロッパ料理集合の定義 %%%%%
+europian_cuisine(X) :- french_cuisine(X); italian_cuisine(X); england_cuisine(X); spanish_cuisine(X).
+
+%%%%% アメリカ大陸料理集合の定義 %%%%%
+americas_cuisine(X) :- american_cuisine(X); mexican_cuisine(X).
+
+%%%%% 食べ物の集合の定義 %%%%%
+food(X) :- asian_cuisine(X).
+
+food(X) :- dessert(X); donburi(X); stir_fry(X); noodles(X); dumpling(X); fried_food(X); soup(X).
